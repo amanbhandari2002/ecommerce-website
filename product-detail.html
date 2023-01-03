@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="prod" id="pg-nav">
+        <div class="nav-prod">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" width="125 px">
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="product.html">PRODUCT</a></li>
+                    <li><a href="cart.html">CART</a></li>
+                    <li><a href="product-detail.html">ABOUT</a></li>
+                    <li><a href="login.html">ACCOUNT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="prod-detail">
+        <div class="img-sec">
+            <div class="prod-img">
+                <img src="images/product-1.jpg" alt="" id="big-prod-img">
+            </div>
+            <div class="small-img">
+                <img src="images/gallery-1.jpg" alt="" class="small-prod-img">
+                <img src="images/gallery-2.jpg" alt="" class="small-prod-img">
+                <img src="images/gallery-3.jpg" alt="" class="small-prod-img">
+                <img src="images/gallery-4.jpg" alt="" class="small-prod-img">
+            </div>
+        </div>
+
+
+
+
+        <div class="prod-info">
+            <p id="">Home/T-shirt</p>
+            <h1>Red Printed T-Shirt by HRX</h1>
+            <p class="price">$51.</p>
+            <select name="" id="">
+                <option value="">small</option>
+                <option value="">medium</option>
+                <option value="">large</option>
+                <option value="">xl</option>
+                <option value="">xll</option>
+            </select>
+            <br>
+            <a class="cart-button" href="">Add To Cart</a>
+            <br>
+            <br>
+            <span>Product details</span>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ullam a itaque commodi soluta repellendus
+                labore esse eum dolor dolorum.</p>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- product section -->
+
+
+    <div class="prod-cnt">
+        <div class="title">
+            <h2>Featured Products</h2>
+        </div>
+        <div class="product">
+            <div class="card">
+                <img src="images/product-1.jpg" alt="">
+                <h4>Printed t-shirt</h4>
+                <p>$30.0</p>
+            </div>
+            <div class="card">
+                <img src="images/product-2.jpg" alt="">
+                <h4>Printed t-shirt</h4>
+                <p>$30.0</p>
+            </div>
+            <div class="card">
+                <img src="images/product-3.jpg" alt="">
+                <h4>Printed t-shirt</h4>
+                <p>$30.0</p>
+            </div>
+            <div class="card">
+                <img src="images/product-4.jpg" alt="">
+                <h4>Printed t-shirt</h4>
+                <p>$30.0</p>
+            </div>
+            <div class="card">
+                <img src="images/product-5.jpg" alt="">
+                <h4>Printed t-shirt</h4>
+                <p>$30.0</p>
+            </div>
+            <div class="card">
+                <img src="images/product-6.jpg" alt="">
+                <h4>Printed t-shirt</h4>
+                <p>$30.0</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- BRAND SECTION -->
+
+
+
+    <div class="brand">
+
+        <div class="brand-card">
+            <img src="images/logo-godrej.png" alt="">
+        </div>
+        <div class="brand-card">
+            <img src="images/logo-coca-cola.png" alt="">
+        </div>
+
+        <div class="brand-card">
+            <img src="images/logo-oppo.png" alt="">
+        </div>
+        <div class="brand-card">
+            <img src="images/logo-paypal.png" alt="">
+        </div>
+        <div class="brand-card">
+            <img src="images/logo-philips.png" alt="">
+        </div>
+
+    </div>
+
+
+
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="footer-txt">
+            <h2>Download our app</h2>
+            <p>Download app for andriod and ios devices</p>
+            <a href=""><img src="images/play-store.png" alt=""></a>
+            <a href=""><img src="images/app-store.png" alt=""></a>
+        </div>
+
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="">
+        </div>
+
+        <div class="footer-tb1">
+            <ul>
+                <li><a href=""> Coupons</li></a>
+                <li><a href="">Blog Post</li></a>
+                <li><a href="">Return Policy</li></a>
+                <li><a href="">Join Affiliate</li></a>
+            </ul>
+        </div>
+
+        <div class="footer-tb1">
+            <ul>
+                <li><a href="">Facebook</li></a>
+                <li><a href="">Twitter</li></a>
+                <li><a href="">Instagram</li></a>
+                <li><a href="">YouTube</li></a>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        var small_img = document.getElementsByClassName("small-prod-img");
+        var big_img = document.getElementById("big-prod-img");
+
+        small_img[0].onclick = function () {
+
+            big_img.src = small_img[0].src;
+        }
+
+        small_img[1].onclick = function () {
+
+            big_img.src = small_img[1].src;
+        }
+        small_img[2].onclick = function () {
+
+            big_img.src = small_img[2].src;
+        }
+        small_img[3].onclick = function () {
+
+            big_img.src = small_img[3].src;
+        }
+    </script>
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <div class="login-nav">
+        <div id="pg-nav">
+            <div class="nav">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo" width="125 px">
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="product.html">PRODUCT</a></li>
+                        <li><a href="cart.html">CART</a></li>
+                        <li><a href="product-detail.html">ABOUT</a></li>
+                        <li><a href="login.html">ACCOUNT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main body -->
+
+
+    <div class="login-container">
+        <div class="login-img">
+            <img src="images/image1.png" alt="">
+        </div>
+
+        <div class="login-win">
+            <div class="log-btn">
+                <span id="login" onclick="login()">Login</span>
+                <span id="register" onclick="register()">register</span>
+                <div id="indicator"></div>
+            </div>
+
+            <div class="form-flex" id="form-box">
+
+                <form action="">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="password">
+                    <button type="submit" class="btn">Login</button>
+                    <a href="">Forget password</a>
+                </form>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Username">
+                    <input type="email" name="" id="" placeholder="email">
+                    <input type="password" name="" id="" placeholder="password">
+                    <button type="submit" class="btn">Register</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+
+    <div class="footer log-footer">
+        <div class="footer-txt">
+            <h2>Download our app</h2>
+            <p>Download app for andriod and ios devices</p>
+            <a href=""><img src="images/play-store.png" alt=""></a>
+            <a href=""><img src="images/app-store.png" alt=""></a>
+        </div>
+
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="">
+        </div>
+
+        <div class="footer-tb1">
+            <ul>
+                <li><a href=""> Coupons</li></a>
+                <li><a href="">Blog Post</li></a>
+                <li><a href="">Return Policy</li></a>
+                <li><a href="">Join Affiliate</li></a>
+            </ul>
+        </div>
+
+        <div class="footer-tb1">
+            <ul>
+                <li><a href="">Facebook</li></a>
+                <li><a href="">Twitter</li></a>
+                <li><a href="">Instagram</li></a>
+                <li><a href="">YouTube</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let fbox = document.getElementById("form-box");
+        let ind = document.getElementById("indicator");
+
+
+        function login() {
+            fbox.style.transform = "translateX(0px)";
+            ind.style.transform = "translateX(0px)";
+
+        }
+
+        function register() {
+            fbox.style.transform = "translateX(-340px)"
+            ind.style.transform = "translateX(100px)";
+        }
+    </script>
+
+
+</body>
